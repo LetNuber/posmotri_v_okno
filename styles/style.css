@@ -46,6 +46,7 @@ ol {
 .result {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 711px;
   height: 456px;
   margin-top: 78px;
@@ -87,6 +88,11 @@ ol {
   color: #fff;
   border-color: #fff;
   padding: 6px 73.5px;
+  align-self: self-end;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
 }
 
 .search-form__textfield {
@@ -94,12 +100,12 @@ ol {
   border: none;
   border-bottom: inset 1px;
   border-top: inset 1px;
-  color: #fff;
+  border-color: #ffffff;
 }
 
 
 input::placeholder {
-  color: #fff;
+  color: #FFFFFFB2;
   width: fit-content;
 }
 
@@ -195,4 +201,52 @@ input::placeholder {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     white-space: nowrap;
+  }
+
+  input {
+    width: 225px;
+  }
+
+  .search-form__textfield {
+    font-family: Fira Sans Condensed;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+  }
+  
+  .fieldset {
+    border: none;
+  }
+  
+  .search-form__checkbox-list {
+    display: flex;
+    vertical-align: middle;
+    gap: 15px;
+  }
+
+  .search-form__label {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 5px;
+  }
+
+  .search-form__checkbox {
+    display: inline-flexs;
+  }
+  
+  .search-form__label-text {
+    font-family: Fira Sans Condensed;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+  }
+
+  .search-form__pseudo-checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #fff;
+    cursor: pointer;
   }
